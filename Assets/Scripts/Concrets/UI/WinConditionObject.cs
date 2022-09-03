@@ -1,18 +1,43 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using AAClone.Manager;
 
-public class WinConditionObject : MonoBehaviour
+namespace AAClone.UI
 {
-    // Start is called before the first frame update
-    void Start()
+    public class WinConditionObject : MonoBehaviour
     {
-        
+        [SerializeField] GameObject _WinConditionPanel;
+
+        private void Awake()
+        {
+            _WinConditionPanel.SetActive(false);
+        }
+
+        private void OnEnable()
+        {
+            GameManager.Instance.OnMissionSucced += HandleOnMissionSucced;
+        }
+
+        private void HandleOnMissionSucced()
+        {
+            if (!_WinConditionPanel.activeSelf)
+            {
+                _WinConditionPanel.SetActive(true);
+            }
+        }
+
+        private void OnDisable()
+        {
+            GameManager.Instance.OnMissionSucced -= HandleOnMissionSucced;
+        }
+
+        public void NextLevel()
+        {
+            GameManager.Instance.LoadLevelScene(1);
+        }
+
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
