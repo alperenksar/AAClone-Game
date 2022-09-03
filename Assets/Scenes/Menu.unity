@@ -1279,7 +1279,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1971472679}
+      - m_Target: {fileID: 1971472679, guid: c6cdf563ce2eb2d4f82eeb56600526d0, type: 3}
         m_TargetAssemblyTypeName: AAClone.UI.MenuScript, Assembly-CSharp
         m_MethodName: PlayGame
         m_Mode: 1
@@ -1879,7 +1879,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1971472679}
+      - m_Target: {fileID: 1971472679, guid: c6cdf563ce2eb2d4f82eeb56600526d0, type: 3}
         m_TargetAssemblyTypeName: AAClone.UI.MenuScript, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -3001,23 +3001,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1896416651}
   m_CullTransparentMesh: 1
---- !u!1 &1971472678 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6847545808680150535, guid: c6cdf563ce2eb2d4f82eeb56600526d0, type: 3}
-  m_PrefabInstance: {fileID: 550498762}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1971472679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1971472678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 449224d19f55f1048b41e7a83c9d66a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2107924505
 GameObject:
   m_ObjectHideFlags: 0
