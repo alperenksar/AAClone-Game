@@ -7,16 +7,29 @@ namespace AAClone.UI
 {
     public class WinConditionObject : MonoBehaviour
     {
-        [SerializeField] GameObject _WinConditionPanel;
+        public GameObject _WinConditionPanel;
 
         private void Awake()
         {
-            _WinConditionPanel.SetActive(false);
+            if (_WinConditionPanel.activeSelf)
+            {
+                _WinConditionPanel.SetActive(false);
+            }
+        }
+
+        public void NextLevel()
+        {
+            GameManager.Instance.LoadLevelScene(1);
         }
 
         private void OnEnable()
         {
             GameManager.Instance.OnMissionSucced += HandleOnMissionSucced;
+        }     
+
+        private void OnDisable()
+        {
+            GameManager.Instance.OnMissionSucced -= HandleOnMissionSucced;
         }
 
         private void HandleOnMissionSucced()
@@ -27,15 +40,7 @@ namespace AAClone.UI
             }
         }
 
-        private void OnDisable()
-        {
-            GameManager.Instance.OnMissionSucced -= HandleOnMissionSucced;
-        }
 
-        public void NextLevel()
-        {
-            GameManager.Instance.LoadLevelScene(1);
-        }
 
 
     }

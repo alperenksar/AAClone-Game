@@ -22,8 +22,6 @@ namespace AAClone.Manager
 
         bool _canThrow;
    
-        public bool CanThrow => _canThrow;
-
    
         void Awake()
         {
@@ -34,11 +32,12 @@ namespace AAClone.Manager
         {
             if (_counter == 0)
             {
-                GameManager.Instance.MissionSucced();
-            }
+                StartCoroutine(WinOrGameOverDebug());
+                
+            }       
 
             
-            if (Input.GetMouseButtonDown(0) && _counter != 0 && CanThrow) 
+            if (Input.GetMouseButtonDown(0) && _counter != 0 && _canThrow) 
             {
                 IsMouseDown = true;
                 _counter--;
@@ -71,6 +70,18 @@ namespace AAClone.Manager
         {
             _canThrow = false;            
         }
+
+        IEnumerator WinOrGameOverDebug()
+        {
+            yield return new WaitForSeconds(1.1f);
+            if (_canThrow)
+            {
+                GameManager.Instance.MissionSucced();
+            }
+
+        }
+
+
 
 
 
