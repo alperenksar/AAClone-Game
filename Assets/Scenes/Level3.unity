@@ -1649,6 +1649,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5202573745045635272, guid: f0082a499bbb8eb4284c6bafb81c69b6, type: 3}
+      propertyPath: _counter
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5202573745045635272, guid: f0082a499bbb8eb4284c6bafb81c69b6, type: 3}
       propertyPath: _needleText
       value: 
       objectReference: {fileID: 1998763618}

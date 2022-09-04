@@ -10,27 +10,8 @@ namespace AAClone.Controller
 {
     public class MainCircleController : CircleController
     {
-        ArrowManager arrowManager;
-
-        private void Awake()
-        {
-            arrowManager=GetComponent<ArrowManager>();
-            StartCoroutine("ChangeSpeedWithTime");
-        }
-
-
-        IEnumerator ChangeSpeedWithTime()
-        {
-            while (true)
-            {
-                yield return new WaitForSeconds(10f);
-                _turnSpeed = _turnSpeed * 1.1f;
-            }
-        }
-
        
-
-
+       
     }
 
     

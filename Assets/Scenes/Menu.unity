@@ -386,6 +386,7 @@ GameObject:
   - component: {fileID: 294875400}
   - component: {fileID: 294875402}
   - component: {fileID: 294875401}
+  - component: {fileID: 294875403}
   m_Layer: 0
   m_Name: NeedleObject (2)
   m_TagString: Arrow
@@ -448,6 +449,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98cbb4bf0e9509b499987464fad859fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &294875403
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294875399}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -1.8}
+  serializedVersion: 2
+  m_Radius: 0.25
 --- !u!1 &312286422
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,6 +554,7 @@ GameObject:
   - component: {fileID: 339312869}
   - component: {fileID: 339312871}
   - component: {fileID: 339312870}
+  - component: {fileID: 339312872}
   m_Layer: 0
   m_Name: NeedleObject (5)
   m_TagString: Arrow
@@ -599,6 +617,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98cbb4bf0e9509b499987464fad859fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &339312872
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339312868}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -1.8}
+  serializedVersion: 2
+  m_Radius: 0.25
 --- !u!1 &507564873
 GameObject:
   m_ObjectHideFlags: 0
@@ -694,6 +728,7 @@ GameObject:
   - component: {fileID: 512876202}
   - component: {fileID: 512876204}
   - component: {fileID: 512876203}
+  - component: {fileID: 512876205}
   m_Layer: 0
   m_Name: NeedleObject (1)
   m_TagString: Arrow
@@ -756,6 +791,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98cbb4bf0e9509b499987464fad859fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &512876205
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512876201}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -1.8}
+  serializedVersion: 2
+  m_Radius: 0.25
 --- !u!1 &536074013
 GameObject:
   m_ObjectHideFlags: 0
@@ -1649,6 +1700,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &933727648 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7312887039099799305, guid: ee0e0ffae06d5cd40a9cec61042b60fc, type: 3}
+  m_PrefabInstance: {fileID: 1615602313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &933727652
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933727648}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -1.8}
+  serializedVersion: 2
+  m_Radius: 0.25
 --- !u!4 &1064509077 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1884936506412267810, guid: ee0e0ffae06d5cd40a9cec61042b60fc, type: 3}
@@ -2395,6 +2467,7 @@ GameObject:
   - component: {fileID: 1681742435}
   - component: {fileID: 1681742437}
   - component: {fileID: 1681742436}
+  - component: {fileID: 1681742438}
   m_Layer: 0
   m_Name: NeedleObject (3)
   m_TagString: Arrow
@@ -2457,6 +2530,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98cbb4bf0e9509b499987464fad859fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &1681742438
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681742434}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -1.8}
+  serializedVersion: 2
+  m_Radius: 0.25
 --- !u!1 &1692029702
 GameObject:
   m_ObjectHideFlags: 0
@@ -2468,6 +2557,7 @@ GameObject:
   - component: {fileID: 1692029703}
   - component: {fileID: 1692029705}
   - component: {fileID: 1692029704}
+  - component: {fileID: 1692029706}
   m_Layer: 0
   m_Name: NeedleObject (7)
   m_TagString: Arrow
@@ -2530,6 +2620,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98cbb4bf0e9509b499987464fad859fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &1692029706
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692029702}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -1.8}
+  serializedVersion: 2
+  m_Radius: 0.25
 --- !u!1 &1710871759
 GameObject:
   m_ObjectHideFlags: 0
@@ -2727,6 +2833,7 @@ GameObject:
   - component: {fileID: 1752669315}
   - component: {fileID: 1752669317}
   - component: {fileID: 1752669316}
+  - component: {fileID: 1752669318}
   m_Layer: 0
   m_Name: NeedleObject (4)
   m_TagString: Arrow
@@ -2789,6 +2896,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98cbb4bf0e9509b499987464fad859fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &1752669318
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752669314}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -1.8}
+  serializedVersion: 2
+  m_Radius: 0.25
 --- !u!1 &1798550017
 GameObject:
   m_ObjectHideFlags: 0
@@ -2800,6 +2923,7 @@ GameObject:
   - component: {fileID: 1798550018}
   - component: {fileID: 1798550020}
   - component: {fileID: 1798550019}
+  - component: {fileID: 1798550021}
   m_Layer: 0
   m_Name: NeedleObject (6)
   m_TagString: Arrow
@@ -2862,6 +2986,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98cbb4bf0e9509b499987464fad859fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &1798550021
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798550017}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -1.8}
+  serializedVersion: 2
+  m_Radius: 0.25
 --- !u!1 &1896416651
 GameObject:
   m_ObjectHideFlags: 0

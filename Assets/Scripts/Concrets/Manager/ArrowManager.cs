@@ -16,7 +16,7 @@ namespace AAClone.Manager
 
         Vector3 _startPos = new Vector3(0, -5.5f, 0);
 
-        float _force = 300f;
+        float _force = 400f;
        
         bool IsMouseDown;
 
