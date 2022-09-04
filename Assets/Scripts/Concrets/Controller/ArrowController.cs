@@ -23,7 +23,7 @@ namespace AAClone.Controller
         {         
             if (other.gameObject.CompareTag("MainCircle"))
             {
-              
+                SoundManager.Instance.PlaySound(0);
                 transform.SetParent(other.transform, true);
                 Destroy(_rb);
             }
