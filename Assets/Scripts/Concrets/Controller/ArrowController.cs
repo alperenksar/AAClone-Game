@@ -23,13 +23,14 @@ namespace AAClone.Controller
         {         
             if (other.gameObject.CompareTag("MainCircle"))
             {
-                SoundManager.Instance.PlaySound(0);
+                SoundManager.Instance.HitSound();
                 transform.SetParent(other.transform, true);
                 Destroy(_rb);
             }
 
             if (other.gameObject.CompareTag("Arrow"))
             {
+                
                 GameManager.Instance.GameOver();
             }
         }

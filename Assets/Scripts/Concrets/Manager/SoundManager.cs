@@ -9,6 +9,7 @@ namespace AAClone.Manager
     public class SoundManager : Singleton<SoundManager>
     {
         [SerializeField] AudioSource[] audioSources;
+        [SerializeField] AudioClip audioClip;
 
         private void Awake()
         {
@@ -18,10 +19,14 @@ namespace AAClone.Manager
 
         public void PlaySound(int index)
         {
-            if (!audioSources[index].isPlaying)
-            {
-                audioSources[index].Play();
-            }
+           
+                if (!audioSources[index].isPlaying)
+                {
+                    audioSources[index].Play();
+                }
+            
+           
+           
         }
 
         public void StopSound(int index)
@@ -31,6 +36,11 @@ namespace AAClone.Manager
                 audioSources[index].Stop();
 
             }
+        }
+
+        public void HitSound()
+        {
+            audioSources[1].PlayOneShot(audioClip);
         }
 
 

@@ -34,6 +34,7 @@ namespace AAClone.Manager
 
         private IEnumerator LoadLevelSceneAsync(int levelindex)
         {
+            SoundManager.Instance.StopSound(0);
             yield return SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + levelindex);
         }
 
